@@ -1,57 +1,25 @@
-# System Design Interview Process
+# 系统设计面试流程指南
 
-## Overview
-The system design interview evaluates a candidate's ability to design complex systems, demonstrating knowledge of best practices, scalability, and trade-offs. A typical process includes several key steps to help practitioners systematically approach the task.
+## 面试概述 (Interview Overview)
+面试时间: 45-60分钟
 
-## Standard Framework: 7 Steps
-1. **Understanding Requirements**  
-   - Determine the specific requirements of the system. For instance, in a URL shortener service, you need to know user needs, desired features (like analytics, custom URLs), and traffic expectations.
+## 7步框架 (7-Step Framework)
+1. 理解需求 (Understand Requirements)
+2. 容量估算 (Capacity Estimation)
+3. API设计 (API Design)
+4. 数据模型 (Data Model)
+5. 高层设计 (High-Level Design)
+6. 深入探讨 (Deep Dive)
+7. 权衡 (Trade-Offs)
 
-2. **Capacity Estimation**  
-   - Estimate the system's expected load. For our URL shortener, consider factors like how many URLs will be shortened per day, how many concurrent accesses, and scalability solutions.
+## DO's 和 DON'Ts
+- DO: 确保理解问题的上下文
+- DON'T: 忽视初步的假设
 
-3. **API Design**  
-   - Design RESTful APIs for the service. Examples include:
-     - `POST /shorten` to shorten a URL
-     - `GET /{shortenedCode}` to redirect to the original URL
-     - `GET /analytics/{shortenedCode}` for usage statistics.
+## 常见评估标准 (Common Evaluation Criteria)
+- 解决方案的有效性
+- 思维过程
+- 沟通能力
 
-4. **Data Model Design**  
-   - Lay out the database schema. The URL shortening service might include:
-     - `Urls` table with fields for `id`, `original_url`, `shortened_url`, and `created_at`.
-
-5. **High-Level Design**  
-   - Construct a diagram outlining major components like the web server, application server, database, and caching layer.
-   - Identify key areas such as load balancers and users' interaction points.
-
-6. **Detailed Design**  
-   - Delve into internal logic, algorithms, and system interactions. Describe how URLs are hashed to create short links and stored in the database.
-
-7. **Summary with Trade-offs**  
-   - Summarize the design choices made, discussing trade-offs. For example, using a database for storage vs. NoSQL for scaling horizontally. Discuss consistency models and how they'll affect performance.
-
-## Tips for Interviews
-### What to Do:
-- Think aloud while reasoning through your design.
-- Ask clarifying questions to refine requirements.
-- Use diagrams to visualize the solution.
-
-### What Not to Do:
-- Avoid jumping to conclusions without exploring options.
-- Don't ignore scalability aspects in your design.
-
-## Common Evaluation Criteria
-- Clarity of thought and communication.
-- Depth of technical knowledge.
-- Ability to comprehend requirements and constraints.
-- Scalability considerations and foresight in architecture.
-
-## Practice Template
-1. **Problem Statement**: Clearly articulate the problem you are solving.
-2. **Requirements**: List functional and non-functional requirements.
-3. **Capacity Estimation**: Provide numbers and reasoning.
-4. **API Design**: Sketch out your API endpoints.
-5. **Data Model**: Show your database schema.
-6. **High-Level Design**: Include diagrams and interactions.
-7. **Detailed Design**: Explain the internal workings.
-8. **Trade-offs**: Discuss your decisions and alternatives.
+## 练习模板 (Practice Template)
+中英文练习模板
