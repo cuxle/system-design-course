@@ -1,15 +1,19 @@
-# Interview Process
+# System Design Interview Process
 
-A comprehensive guide on system design interview process including:
+## 7-Step Framework
+1. Define the problem
+2. Gather requirements
+3. Design the system
+4. Consider scalability
+5. Handle data storage
+6. API design
+7. Prepare for changes
 
-- **Interview overview and standard framework**
-- **Step 1**: Understanding requirements (5-10 min)
-- **Step 2**: Capacity estimation (5-10 min)
-- **Step 3**: API design (5 min)
-- **Step 4**: Data model design (5 min)
-- **Step 5**: High-level design (10-15 min)
-- **Step 6**: Deep dive (10-15 min)
-- **Step 7**: Summary and trade-offs (2-5 min)
-- **Interview tips** (DO's and DON'Ts)
-- **Common evaluation points**
-- **Practice template**
+## Capacity Estimation Examples
+- Define expected load and potential growth.
+
+## 数据建模
+- 讨论如何设计数据模型以支持系统需求。
+
+## 面试技巧
+- 练习常见问题，准备好对设计做出合理的解释。
